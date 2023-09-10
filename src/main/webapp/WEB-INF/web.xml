@@ -30,6 +30,7 @@
 	<!-- 
 		ApplicationContextがロードする設定クラスの場所を指定する。
 		以下のクラスで@Configurationを使用してBean管理できる。
+		サービス、リポジトリ層などのBeanを管理する。
 	 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
@@ -74,6 +75,7 @@
 		  ・contextConfigLocation：DispatcherServletがロードする設定クラスの場所。
 		    WebMvcConfigクラスをSpringの設定クラスにしている。
 		load-on-startupはサーブレットのロード順を示しており、最初にロードすることを意味する。
+		主にプレゼンテーション層のBeanを管理する。
 	 -->
 	<servlet>
 		<servlet-name>app</servlet-name>
